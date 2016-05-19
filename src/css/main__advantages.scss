@@ -1,0 +1,115 @@
+
+.advantage{
+  width: $width_wrapper;
+  clear:both;
+  margin: 72px auto 87px;
+
+  .advantage__art{
+    margin-right: 40px;
+    display: inline-block;
+
+    .advantage__number {
+      float: left;
+      margin-right:32px;
+      width: 65px;
+      height: 61px;
+      color: $color_grey;
+      opacity: 0.1;
+      font-family: "Myriad Pro";
+      font-size: 90px;
+
+    }
+    .advantage__info{
+      float:right;
+    }
+    .advantage__icon__setting {
+      margin-bottom: $margin_block;
+
+    }
+    .advantage__icon_param{
+      margin-bottom: $margin_block;
+    }
+    .advantage__icon__truck {
+      margin-bottom: $margin_block;
+    }
+    .advantage__info h4 {
+      margin-bottom: 17px;
+      height: 15px;
+      color: $color_grey;
+      font-family: Ubuntu;
+      font-size: 20px;
+
+    }
+
+    p{
+      margin-bottom: 26px;
+      width: 237px;
+      color: #8a8a8a;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+    a{
+      margin-bottom: 26px;
+      width: $width_number;
+      height: 11px;
+      font-family: Ubuntu;
+      font-size: 13px;
+      color: $color_grey;
+    }
+    .arrow{
+      margin: 8px;
+      color:$color_blue;
+    }
+    a:hover {
+      color:$color_blue;
+    }
+    .arrow:hover {
+      color: $color_grey;
+    }
+
+  }
+}
+
+.service {
+  background-color: #2a2d32;
+  padding: 50px 40px 70px;
+  h3{
+    height: 19px;
+    color: $whiteColor;
+    font-size: 24px;
+    margin-bottom: 55px;
+  }
+  .service_art{
+    display:inline-block;
+
+  }
+  figure {
+    margin-right: 20px;
+  }
+  p {
+    margin-top: 34px;
+    text-align: center;
+    color: $whiteColor;
+    font-size: 16px;
+  }
+  p:hover{
+    color:$hover_color;
+  }
+
+  .service_art_link {
+    display: block;
+    width: 260px;
+    height: 260px;
+    position: relative;
+  }
+  .service_art_hover{
+    display:none;
+    position:absolute;
+    right:0;
+    bottom: 0;
+  }
+  .service_art_link:hover .service_art_hover{
+    display: block;
+    opacity: 0.9;
+  }
+}

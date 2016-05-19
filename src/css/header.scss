@@ -1,0 +1,235 @@
+/* ----------mixin ----------------------*/
+
+/* ---------------------- header logo slogan -------------- */
+header {
+  width: $width_wrapper;
+  .top__header {
+    margin: 0 auto;
+    height: 73px;
+    width: $width_header;
+
+    .top__header__logo {
+      position: absolute;
+      top: 37px;
+      left: 45px;
+    }
+
+    /* -----------------  socials --------------------*/
+    .top__header__socials {
+      position: relative;
+      float: right;
+      display: block;
+      top: 46px;
+      width: 158px;
+      height: 24px;
+      li {
+        a {
+          display: block;
+          position: absolute;
+          cursor: pointer;
+        }
+        #ico_facebook {
+          right: 140px;
+          width: $width_social-ico - $delta10;
+          height: $height_social-ico - $delta1;
+          background: $social-ico 0 0 no-repeat;
+          &:hover {
+            background: $social-ico 0 -18px no-repeat;
+          }
+        }
+        #ico_twitter {
+          right: 101px;
+          width: $width_social-ico - $delta1;
+          height: $height_social-ico - $delta1;
+          background: $social-ico -11px 0 no-repeat;
+          &:hover {
+            background: $social-ico -11px -18px no-repeat;
+          }
+        }
+        #ico_rrc {
+          right: 68px;
+          width: $width_social-ico - $delta1 ;
+          height: $height_social-ico - $delta1;
+          background: $social-ico  -29px 0 no-repeat;
+          &:hover {
+            background: $social-ico  -29px -18px no-repeat;
+          }
+        }
+        #ico_linkedin {
+          right: 35px;
+          width: $width_social-ico;
+          height: $height_social-ico;
+          background: $social-ico  -46px 0 no-repeat;
+          &:hover {
+            background: $social-ico  -46px -18px no-repeat;
+          }
+        }
+        #ico_skype {
+          right: 3px;
+          width: $width_social-ico;
+          height: $height_social-ico;
+          background: $social-ico -64px 0 no-repeat;
+          &:hover {
+            background: $social-ico -64px -18px no-repeat;
+          }
+        }
+      }
+    }
+  }
+  /* ------------------  menu ----------------------------*/
+  .top__header__menu {
+    margin: 40px auto 0;
+    width: $width_header;
+    height: 55px;
+    background-color: #2a2d32;
+    ul {
+      display: inline-block;
+      float: left;
+      li {
+        width: 118px;
+        height: 55px;
+        float: left;
+        text-align: center;
+        line-height: 55px;
+        border-right: 1px solid #181a1d;
+        &:nth-child(1) {
+          background-color: #248cec;
+        }
+        a {
+          text-transform: uppercase;
+          font-family: $fontUbuntuM;
+          font-size: $font_size_main;
+          line-height: 20px;
+          font-weight: 400;
+          color: aliceblue;
+
+          &:hover {
+            color: $hover_color;
+          }
+        }
+      }
+    }
+    form {
+      display: inline-block;
+      float: right;
+      position: relative;
+      width: 241px;
+      height: 55px;
+      p {
+        display: inline-block;
+        width: 241px;
+        height: 55px;
+        font-size: $font_size_small;
+        font-weight: 400;
+        line-height: 55px;
+
+        input {
+          width: 241px;
+          height: 40px;
+          margin-top: 7px;
+          margin-right: 7px;
+          margin-left: 10px;
+          float: right;
+          background-color: rgba(255, 255, 255, 0.05);
+          border: 1px solid #181a1d;
+          z-index: 10;
+          max-length:256;
+          &:focus {
+            color: #fff;
+
+          }
+        }
+        input#search {
+          padding-left: 15px;
+        }
+        img {
+          width: 40px;
+          position: absolute;
+          top: 14px;
+          right: 10px;
+          z-index: 5;
+        }
+      }
+    }
+  }
+}
+
+.trade-marks {
+  width: $width_header;
+  height: 240px;
+  margin: 0 auto;
+  position: relative;
+  ul {
+    display: block;
+    float: left;
+    //width: 100px;
+    //height: 100px;
+    li {
+      a {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+      }
+      #trade-mark-1 {
+        //left: 10px;
+        top: 80px;
+        width: $width_trade_mark-ico;
+        height: $height_trade_mark-ico;
+        background: $url_trade_mark-ico 0 0 no-repeat;
+        &:hover {
+          background: $url_trade_mark-ico 0 -66px no-repeat;
+        }
+      }
+      #trade-mark-2 {
+        left: 191px;
+        top: 80px;
+        width: $width_trade_mark-ico;
+        height: $height_trade_mark-ico;
+        background: $url_trade_mark-ico -191px 0 no-repeat;
+        &:hover {
+          background: $url_trade_mark-ico -191px -66px no-repeat;
+        }
+      }
+      #trade-mark-3 {
+        left: 397px;
+        top: 80px;
+        width: $width_trade_mark-ico;
+        height: $height_trade_mark-ico;
+        background: $url_trade_mark-ico -397px 0 no-repeat;
+        &:hover {
+          background: $url_trade_mark-ico -397px -66px no-repeat;
+        }
+      }
+      #trade-mark-4 {
+        left: 628px;
+        top: 80px;
+        width: $width_trade_mark-ico;
+        height: $height_trade_mark-ico;
+        background: $url_trade_mark-ico -628px 0 no-repeat;
+        &:hover {
+          background: $url_trade_mark-ico -628px -66px no-repeat;
+        }
+      }
+      #trade-mark-5 {
+        left: 830px;
+        top: 80px;
+        width: $width_trade_mark-ico;
+        height: $height_trade_mark-ico;
+        background: $url_trade_mark-ico -830px 0 no-repeat;
+        &:hover {
+          background: $url_trade_mark-ico -830px -66px no-repeat;
+        }
+      }
+      #trade-mark-6 {
+        left: 1009px;
+        top: 80px;
+        width: $width_trade_mark-ico;
+        height: $height_trade_mark-ico;
+        background: $url_trade_mark-ico -1009px 0 no-repeat;
+        &:hover {
+          background: $url_trade_mark-ico -1009px -66px no-repeat;
+        }
+      }
+    }
+  }
+}

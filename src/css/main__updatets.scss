@@ -1,0 +1,150 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.updates__wrapper {
+	width: $width_wrapper;
+	margin: 0 auto;
+	&:after {
+		content:'';
+		display:block;
+		height:0;
+		clear: both;
+	}
+}
+
+.updates {
+	padding: 64px 0 82px;
+	background: $updatesBckgr;
+	h3 {
+		margin: 0 0 48px 3px;
+		color: $textColor1;
+		font: $font_size_medium +11 $fontUbuntuM, $fontArial;
+		text-transform: capitalize;
+	}
+	.updates__news {
+		background: $updatesBckgr;
+		float: left;
+		width: 560px;
+
+		.news{
+			margin-top: 30px;
+			&:after{
+				content:'';
+				display:block;
+				height:0;
+				clear: both;
+			}
+		}
+
+		.news__photo {
+			position: relative;
+			float: left;
+			margin-right: 34px;
+		}
+
+		.date {
+			position: absolute;
+			left: -17px;
+			top: 12px;
+			height: 80px;
+			width: 40px;
+			text-align: center;
+		}
+
+		.month {
+			height: 40px;
+			background: $linkHoverColor;
+			color: $whiteColor;
+			font: $font_size_medium+2 $fontUbuntuM, $fontArial;
+			line-height: 40px;
+		}
+
+		.day {
+			height: 40px;
+			background: $bannersActiveBckgr;
+			color: $textColor2;
+			font: $font_size_medium+5 $fontUbuntuM, $fontArial;
+			line-height: 40px;
+		}
+
+		img {
+			height: 150px;
+			width: 150px;
+		}
+
+		.news__content {
+			.news__content__title {
+				margin-bottom: 11px;
+				a{
+					color: $textColor1;
+					font: $font_size_big $fontUbuntuM, $fontArial;
+					text-decoration: none;
+					&:hover{
+						color: $linkHoverColor;
+					}
+				}
+			}
+
+			p {
+				color: $textColor3;
+				font: $font_size_medium $fontArial;
+				a{
+					color: $textColor4;
+					text-decoration: none;
+				}
+			}
+
+			.news__content__author {
+				margin-bottom: 27px;
+				.author {
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+
+	.updates__banners {
+		margin-left: 600px;
+		background: $updatesBckgr;
+
+		.updates__banners__titles {
+			background: $updatesBckgr;
+			height: 39px;
+			margin-bottom: 5px;
+			border: 1px solid $bannersBorderColor;
+			background: $whiteColor;
+			color: $textColor1;
+			font: $font_size_medium $fontUbuntuM, $fontArial;
+			line-height: 39px;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			span {
+				display: inline-block;
+				margin-right: 13px;
+				width: 38px;
+				border-right: 2px solid $bannersBorderColor;
+				text-align: center;
+			}
+		}
+
+		.updates__banners__titles-active {
+			background: $bannersActiveBckgr;
+			color: $whiteColor;
+
+			span {
+				border-right: 1px solid #f6c53d;
+			}
+		}
+
+		.updates__banners__text {
+			display: none;
+			margin: 30px 0 43px 38px;
+			color: $textColor5;
+			font: $font_size_medium $fontArial;
+		}
+	}
+}

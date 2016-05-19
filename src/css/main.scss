@@ -1,0 +1,26 @@
+@import "variable.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "slider.scss";
+@import "main__advantages.scss";
+@import "main__updatets.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+
+  .wrapper {
+    position: relative;
+    width: $width_wrapper;
+    margin: 0 auto;
+    background-color: white;
+  }
+}
+
